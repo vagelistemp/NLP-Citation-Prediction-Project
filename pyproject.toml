@@ -1,7 +1,7 @@
 [project]
 name = "citepred"
 version = "0.1.0"
-description = "Leakage-free citation (link) prediction with text, author and graph features: TF-IDF, SBERT, SVD, PageRank, LightGBM"
+description = "Citation (link) prediction on a scholarly knowledge graph with text, author and graph features: TF-IDF, SBERT, SVD, PageRank, LightGBM"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }

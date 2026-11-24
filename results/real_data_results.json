@@ -683,5 +683,18 @@
   "brier": 0.02296762509274719,
   "accuracy": 0.9698413322585084
  },
- "total_seconds": 993.7665917873383
+ "total_seconds": 993.7665917873383,
+ "knowledge_graph": {
+  "paper_nodes": 138499,
+  "author_nodes": 149682,
+  "cites_edges": 1091955,
+  "wrote_edges": 456810,
+  "mean_references_per_paper": 7.88420855024224,
+  "mean_citations_per_paper": 7.88420855024224,
+  "papers_without_references": 0.27554711586365244,
+  "papers_without_authors": 0.0,
+  "mean_authors_per_paper": 3.29829096238962,
+  "mean_papers_per_author": 3.051869964324368,
+  "authors_with_several_papers": 0.3962333480311594
+ }
 }

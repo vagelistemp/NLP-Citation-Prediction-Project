@@ -35,7 +35,7 @@ FEATURE_GROUPS: Dict[str, List[str]] = {
 GRAPH_GROUPS = ("degree", "neighbors", "paths", "pagerank", "svd", "emb_graph", "authors_graph")
 STATIC_GROUPS = ("tfidf", "sbert", "authors_static", "ids")
 
-# The nine features of the original notebook, for the like-for-like comparison of the two protocols.
+# The nine baseline features, for the like-for-like comparison of the two constructions.
 ORIGINAL_9 = ["common_authors", "sbert_similarity", "out_degree_p1", "in_degree_p2", "preferential_attachment",
               "jaccard_successors", "jaccard_predecessors", "adamic_adar", "resource_alloc"]
 

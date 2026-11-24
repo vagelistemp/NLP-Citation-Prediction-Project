@@ -7,7 +7,7 @@ Steps (all leak-free unless stated):
   1. data checks (are the test pairs hidden edges? mutual citations? degree-0 shares?)
   2. a *pseudo-test split*: hide as many known edges as the real test set has positives, add random negatives, remove the
      hidden edges from the graph. Because the answers are known, every score below is a real held-out score.
-  3. protocol comparison with the original notebook's 9 features: leaky vs leak-free
+  3. construction comparison with the 9 baseline features: leaky vs leak-free
   4. cumulative feature ablation and leave-one-group-out ablation (graph features are built once and sub-selected)
   5. final model on the full data -> predictions for the real test pairs
 

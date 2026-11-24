@@ -1,14 +1,15 @@
-"""citepred: leakage-free citation (link) prediction with text, author and graph features.
+"""citepred: citation (link) prediction on a scholarly knowledge graph (papers, authors, abstracts, citations).
 
 Modules
 -------
+kg          the knowledge graph: typed cites / wrote edges, statistics, triples
 io          loading the challenge-format data, writing submissions
 synthetic   a small synthetic citation network (text, authors, edges, labelled test pairs)
 graph       sparse-matrix graph features (degrees, neighbours, Adamic-Adar, paths, PageRank, SVD)
 text        TF-IDF and SBERT similarity, graph-aware embedding features
 authors     shared authors and the author-to-author citation prior
 features    feature groups and the FeatureBuilder
-protocol    the leakage-free edge-out-of-fold training-set construction (and the leaky one it replaces)
+protocol    the edge-out-of-fold training-set construction (and the baseline full-graph one it replaces)
 model       LightGBM cross-validation and metrics
 embed       resumable SBERT embedding of the abstracts
 """

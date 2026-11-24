@@ -45,8 +45,8 @@ def main(argv=None) -> int:
         ds = make_synthetic(args.papers)
         builder = FeatureBuilder(ds, None, svd_dim=16)                     # the synthetic abstracts are bags of topic words: no SBERT needed
         feats = names_for(builder.available(DEFAULT_GROUPS))
-        runs = {"leaky (original protocol)": run_experiment(ds, builder, feats, args.folds, leak=True, params=dict(n_estimators=300), log=lambda *a: None),
-                "leak-free (this project)": run_experiment(ds, builder, feats, args.folds, leak=False, params=dict(n_estimators=300), log=lambda *a: None)}
+        runs = {"full-graph features (baseline)": run_experiment(ds, builder, feats, args.folds, leak=True, params=dict(n_estimators=300), log=lambda *a: None),
+                "edge-out-of-fold (this fix)": run_experiment(ds, builder, feats, args.folds, leak=False, params=dict(n_estimators=300), log=lambda *a: None)}
         print(summarise(runs).round(4).to_string(index=False))
         return 0
 

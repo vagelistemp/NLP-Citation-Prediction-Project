@@ -99,7 +99,7 @@ def build_training_set(ds: Dataset, builder: FeatureBuilder, groups: Sequence[st
     """Construct pairs, folds and features.
 
     ``leak=False`` (default): the leakage-free edge-out-of-fold protocol described in the module docstring.
-    ``leak=True``: reproduces the original notebook, which computes every graph feature on the *full* graph.
+    ``leak=True``: the baseline construction, which computes every graph feature on the *full* graph.
     """
     hf = default_hidden_fraction(ds) if hidden_fraction is None else hidden_fraction
     pairs, y, fold = make_pairs(ds, n_folds, hf, seed, max_positives)

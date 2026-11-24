@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.cache/
+.ipynb_checkpoints/
+*.egg-info/
+submission.csv
+data/
